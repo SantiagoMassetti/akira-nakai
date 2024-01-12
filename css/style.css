@@ -1,0 +1,548 @@
+/*---RESET---*/
+*{
+    font-family: 'Mukta', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*---FONTS---*/
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito&display=swap');
+
+
+
+
+/*---CLASES---/
+/*---(common):Banner---*/
+.banner {
+    width: auto;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-origin: border-box;
+    position: relative;
+    background-color: coral;
+}
+.banner h2{
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    color: white;
+    text-align: right;
+    font-weight: lighter;
+    font-size: 32px;
+}
+/*---(common):Intro Text---*/
+.introductory_text{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: auto;
+    text-align: center;
+}
+/*---(common): Header---*/
+header {
+    background-color: black;
+    display: flex;
+}
+header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 32px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+header div h1{
+    color: white;
+    text-align: left;
+    font-weight: 300;
+    font-size: 60px;
+}
+header div p{
+    color: white;
+    text-align: left;
+    font-weight: normal;
+    font-size: 12px;
+}
+/*---MAIN---*/
+h2 {
+    text-align: center;
+}
+
+/*---(common):Images---*/
+
+/*---(common):carpage---*/
+.carpage{
+    padding-top: 80px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: 900px 100px auto;
+    gap: 40px;
+    height: 500px;
+}
+
+.maincarimg{
+    position: relative;
+    overflow: hidden;
+}
+.maincarimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carimg{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 40px;
+}
+
+.carimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carimg1{
+    position: relative;
+    overflow: hidden;
+}    
+.carimg2{
+    position: relative;
+    overflow: hidden;
+}
+.carimg3{
+    position: relative;
+    overflow: hidden;
+}
+.carimg4{
+    position: relative;
+    overflow: hidden;
+}
+
+.cardescription{
+    padding-left: 40px;
+}
+.cardescription h2{
+    text-align: left;
+}
+.cardescription p{
+    margin-top: 10px;
+}
+
+/*---^Index^---*/
+
+/*---(index): HEADER---*/
+.index_header{
+    background-image: url(../images/akiralookingatcar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-origin: border-box;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+header nav {
+    padding-top: 1fr;
+    padding-bottom: 1fr;
+    padding-right: 32px;
+    margin-left: auto;
+}
+header ul{
+    list-style: none;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+}
+header ul li a {
+    text-decoration: none;
+    color: white;
+}
+header ul li{
+    padding: 0px 8px;
+}
+
+.headliner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 32px;
+}
+.headliner h1{
+    color: white;
+    text-align: left;
+    font-weight: 300;
+    font-size: 48px;
+}
+.headliner p{
+    color: white;
+    text-align: left;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+/*---(Index): Lastest Creations---*/
+.lastest_creations_h2{
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
+
+.lastest_creations{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.imagecontainer{
+    position: relative;
+    overflow: hidden;
+    width: 32%;
+    height: 400px;
+}
+
+.imagecontainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+    opacity: 0;
+}
+
+.overlay h3{
+    color: white;
+    right: 8px;
+    bottom: 8px;
+    position: absolute;
+}
+
+.imagecontainer:hover .imagecontainer img{
+    transform: scale(1.5);
+}
+
+.imagecontainer:hover .overlay{
+    opacity: 1;
+}
+
+
+/*---(Index )Check on Minato Build---*/
+.check_on_minato_build {
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: max-content 400px;
+}
+
+.video_container {
+    padding: 30px 30%;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+/*---^Cars^---*/
+.banner.cars{
+    background-image: url(../images/manycars.jpg);
+    background-position: 50% 75%;
+}
+
+.paragraph.cars{
+    margin: 40px 33%;
+    text-align:center ;
+}
+/*---(Cars): Gallery---*/
+
+.cars_gallery {
+    padding-left: 160px;
+    padding-right: 160px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: 400px;
+    gap: 40px;
+}
+
+.gallery_item{
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery_item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.gallery_item:hover .overlay{
+    opacity: 1;
+}
+
+
+/*---^About^---*/
+.banner.about{
+    background-image: url(../images/akirasmoking.png);
+}
+
+/*---(About) About Akira---*/
+
+.paragraph {
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+.about_akira {
+    padding-top: 80px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 40px;
+    height: 500px;
+    gap: 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.about_akira_img {
+    background-image: url(../images/akirasmokingdown.png);
+    background-size: cover;
+    background-position: 50% 15%;
+    background-repeat: no-repeat;
+}
+/*---(About) Phrase---*/
+.phrase {
+    margin: 40px 33%;
+}
+.phrase p {
+    font-style: italic;
+}
+.comillas {
+    background-image: url(../images/comillas2.png);
+    background-size: cover;
+    height: 48px;
+    width: 48px;
+}
+/*---(About) Tunning Concept---*/
+.tunning_concept {
+    padding-top: 40px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 40px;
+    height: 500px;
+    gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.tunning_concept_img{
+    background-image: url(../images/akirawhitespoiler.webp);
+    background-position: 50% 15%;
+    background-size: cover;
+}
+
+.tunning_concept h2 {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/*---^Engines^---*/
+
+.engine_tunning_options h2{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.engine_tunning_options p{
+    text-align: center;
+}
+
+.engines{
+    padding-top: 40px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.engine {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+}
+.engine img{
+    object-fit: cover;
+    width: 100%;
+    height: 180px;
+}
+.engine h3{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.engine p{
+    text-align: center;
+}
+
+/*---^About^---*/
+.banner.contact{
+    background-image: url(../images/akiramesuring.webp);
+    background-position: 50% 60%;
+}
+
+.formsection{
+    display: flex;
+}
+
+.form h2{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form{
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;   
+}
+
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 30px;   
+}
+
+.form_group{
+    position: relative;
+    color: #5757577e
+}
+
+.form_input{
+    width: 100%;
+    color: #706c6c;
+    background: none;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #5757577e;
+}
+
+.form_input:not(:placeholder-shown){
+    color: #4d4646;
+}
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: rgb(27, 27, 27);
+}
+
+.form_label{
+    color: #5757577e;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #5757577e;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+
+.form_input:focus ~ .form_line,
+.form_input:not(:placeholder-shown) ~ .form_line{
+    transform: scale(1);
+}
+
+.form_submit {
+    background-color: #5757577e;
+    font-weight:bold;
+    font-size: larger;
+    border: none;
+    cursor: pointer;
+    padding: 10px 0px;
+}
+
+@media (max-width: 425px) {
+
+    .form_title{
+        font-size: 1.8rem;
+    }
+}
+/*---FOOTER---*/
+footer {
+    background-color: black;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 180px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    bottom: 0px;
+    margin-top: 60px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul {
+    padding-left: 40px;
+}
+
+footer ul li {
+    padding: 8px
+}
+
+footer p {
+    color: white;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    z-index: 3;
+}
+
+@media screen and (max-width:880px){
+    
+}
