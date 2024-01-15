@@ -663,3 +663,74 @@ footer p {
     }
 }
 
+/**MEDIA QUERIES cars*/
+@media screen and (max-width:1500px){
+    .cars_gallery {
+        grid-auto-rows: 300px;
+    }
+}
+@media screen and (max-width:1360px){
+    .cars_gallery {
+        grid-auto-rows: 250px;
+    }
+}
+@media screen and (max-width:1200px){
+    .paragraph.cars{
+        margin: 40px 15%;
+        text-align:center ;
+    }
+    .cars_gallery {
+        grid-template-columns: auto auto;
+        grid-auto-rows: 300px;
+    }
+    
+}
+@media screen and (max-width:1020px){
+    .cars_gallery {
+        grid-auto-rows: 250px;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:876px){
+    .cars_gallery {
+        grid-template-columns: auto;
+        grid-auto-rows: 400px;
+        gap: 40px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media screen and (max-width:624px){
+    .cars_gallery {
+        grid-auto-rows: 300px;
+        gap: 30px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+@media screen and (max-width:520px){
+    .cars_gallery {
+        grid-auto-rows: 250px;
+        gap: 30px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+@media screen and (max-width:413px){
+    .cars_gallery {
+        grid-auto-rows: 200px;
+        gap: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media screen and (max-width: 330px){
+    .cars_gallery {
+        grid-auto-rows: 180px;
+        gap: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
